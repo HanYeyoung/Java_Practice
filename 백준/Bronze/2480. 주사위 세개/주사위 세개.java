@@ -18,13 +18,16 @@ public class Main {
       } else if ( b == c && a != c ) {
          prize = 1000 + 100 * b;
       } else {
+         /* if문 사용
          if (a > b && a > c) {
             prize = a * 100;
         } else if (b > a && b > c) {
             prize = b * 100;
         } else {
            prize = c * 100;
-        }
+        }*/
+         // max 사용
+        prize = (Math.max(Math.max(a, b), c)*100);
       }
       System.out.println(prize);
       
