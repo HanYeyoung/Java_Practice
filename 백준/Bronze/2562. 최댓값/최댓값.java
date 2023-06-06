@@ -8,10 +8,7 @@ public class Main {
         int index = 0;
         
         for (int i = 0 ; i < 9 ; i++) {
-            array[i] += scnr.nextInt();
-        }
-        
-        for (int i = 0 ; i < 9 ; i++) {
+            array[i] = scnr.nextInt();
             if (array[i] > max) {
                 max = array[i];
                 index = i + 1;
