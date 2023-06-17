@@ -5,24 +5,24 @@ import java.util.StringTokenizer;
 
 public class Main {
    public static void main(String[] args) throws IOException {
-      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-      StringTokenizer st = new StringTokenizer(br.readLine());
+       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+       
+       int king = 1;
+       int queen = 1;
+       int rook = 2;		
+       int bishop = 2;
+	   int knight = 2;
+       int pawn = 8;
+      
+       StringTokenizer st = new StringTokenizer(br.readLine());
 
-      int king = Integer.parseInt(st.nextToken());
-      int queen = Integer.parseInt(st.nextToken());
-      int rook = Integer.parseInt(st.nextToken());
-      int bishop = Integer.parseInt(st.nextToken());
-      int night = Integer.parseInt(st.nextToken());
-      int pawn = Integer.parseInt(st.nextToken());
+       king = king - Integer.parseInt(st.nextToken());
+       queen = queen - Integer.parseInt(st.nextToken());
+       rook = rook - Integer.parseInt(st.nextToken());
+       bishop = bishop - Integer.parseInt(st.nextToken());
+       knight = knight - Integer.parseInt(st.nextToken());
+       pawn = pawn - Integer.parseInt(st.nextToken());
       
-      king = 1 - king;
-      queen = 1 - queen;
-      rook = 2 - rook;
-      bishop = 2 - bishop;
-      night = 2 - night;
-      pawn = 8 - pawn;
-      
-      System.out.println(king + " " + queen + " " + rook + " " + bishop + " " + night + " " + pawn);
-      
+       System.out.println(king + " " + queen + " " + rook + " " + bishop + " " + knight + " " + pawn);  
    }
 }
